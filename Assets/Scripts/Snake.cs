@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Snake : MonoBehaviour
 {
+    public float speed;
     // Start is called before the first frame update
+
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKey(KeyCode.Space)){
+            transform.position += speed * Time.deltaTime * Vector3.right; //new Vector3(, 0, 0); 
+        }
     }
 }
