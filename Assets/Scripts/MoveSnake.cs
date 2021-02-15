@@ -36,6 +36,7 @@ public class MoveSnake : MonoBehaviour
 
     Vector3 getHeadPosition()
     {
-        return segments[segments.Count-1].transform.position + new Vector3(segments[segments.Count-1].transform.localScale.x, 0, 0);
+        Transform headTransform = segments[segments.Count-1].transform;
+        return headTransform.position + headTransform.rotation * new Vector3(2*headTransform.localScale.x, 0, 0);
     }
 }
