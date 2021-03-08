@@ -8,7 +8,7 @@ public class Segment : MonoBehaviour
     private Transform pivotPoint;
     private float speed = 0.5f;
 
-    internal Snake snake;
+    public Snake snake;
     private Transform segmentHead;
     
     

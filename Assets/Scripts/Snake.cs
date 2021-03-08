@@ -98,7 +98,7 @@ public class Snake : MonoBehaviour
         return segments.IndexOf(segment) == 0;
     }
 
-        internal bool isHead(Segment segment){
+    internal bool isHead(Segment segment){
         return segments.IndexOf(segment) == segments.Count - 1;
     }
 
