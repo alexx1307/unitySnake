@@ -7,7 +7,6 @@ public class Segment : MonoBehaviour
 {
     private Transform pivotPoint;
     private float speed = 0.5f;
-    // Start is called before the first frame update
 
     internal Snake snake;
     private Transform segmentHead;
@@ -26,8 +25,6 @@ public class Segment : MonoBehaviour
     {
         float diff = Time.deltaTime * speed;
         
-        //Tail.transform.Find("scalePivot").transform.localScale -= new Vector3(Time.deltaTime * speed, 0, 0);
-        //Tail.transform.Find("scalePivot").transform.localPosition += new Vector3(Time.deltaTime * speed, 0, 0);
         if(snake.isHead(this)){
             pivotPoint.localScale += new Vector3(diff, 0, 0);
         }

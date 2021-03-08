@@ -19,15 +19,13 @@ public class Snake : MonoBehaviour
     [SerializeField]
     private Quaternion currentDirection;
 
+    public float changeTime = 0; 
+    public float changeSpeed = 2; 
+
     internal void AddLength(float toAdd)
     {
         expectedLength += toAdd;
     }
-
-    public float changeTime = 0; 
-    public float changeSpeed = 2; 
-
-    // Start is called before the first frame update
 
     private Segment Head{
         get{
